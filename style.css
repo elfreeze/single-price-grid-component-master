@@ -1,3 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Colors {
+    color: hsl(179, 62%, 43%), hsl(71, 73%, 54%), hsl(204, 43%, 93%), hsl(218, 22%, 67%)
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: hsl(204, 43%, 93%);
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+.grid-column {
+    height: 300px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.join {
+    background: #fff;
+}
+
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
